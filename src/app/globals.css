@@ -18,6 +18,14 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  /* mobile nav stacks to ~216px; desktop nav is h-56 = 224px */
+  scroll-padding-top: 232px; /* mobile: 216px + 16px breathing room */
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 248px; /* desktop: 224px + 24px breathing room */
+  }
 }
 
 body {
