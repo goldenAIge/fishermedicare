@@ -30,21 +30,45 @@ I look forward to hearing from you and helping make Medicare a little less compl
 
 Also include in the footer: "Not affiliated with or endorsed by Medicare or any government agency."
 
-## Design direction
+## Design System
 
-- **Aesthetic:** Calm Pacific Northwest. Soft Spokane-area imagery (Spokane River, Mt. Spokane, Riverfront Park) in the hero.
-- **Palette:** Navy primary, white background, warm accent (soft amber or sage). No bright/loud colors.
-- **Typography:** Base 18–20px. Headings generous. Audience is 65+; accessibility IS the brief, not a bonus.
-- **Layout:** Single page, anchor-link nav, generous whitespace, tap targets ≥44px.
-- **Tone:** Professional but warm. Not corporate-sterile.
+### Aesthetic
+Clean, warm, trustworthy. NOT "financial/corporate." No literal landscape photography. The brand logo (abstract tree + mountain) is the only nature motif used, and only as the logo itself.
 
-## Page structure (single page, anchor-link nav)
+### Color Palette
+- Slate/charcoal: `#2E3A47` — structural dark; section panels and nav
+- Navy:           `#22304D` — secondary dark for depth
+- Light gray:     `#F4F5F7` — light section backgrounds
+- Coral accent:   `#E68A78` — single warm accent; CTAs, links, highlights only
+- White:          `#FFFFFF` — text on dark panels
 
-1. **Hero** — Name, headline, headshot, primary CTA (phone link + "Get in touch" scroll)
-2. **About** — Bio above + headshot
-3. **What I Do** — Three service cards: Medicare Advantage, Medicare Supplement, Part D. Plain-English one-paragraph explanation under each.
-4. **Contact** — Phone, email, business hours, service area, simple contact form (mailto for v1)
-5. **Footer** — Compliance disclaimer, "not affiliated with Medicare" line, copyright
+Coral is the ONLY warm accent — use sparingly. Cool darks (slate/navy) carry the structure. Powder blue is carried by the logo only; do not spread it across the UI.
+
+### Emphasis Blocks
+Key sections (hero, service cards, possibly footer) use a slate (`#2E3A47`) panel background with white text so the words stand out clearly against the light-gray page.
+
+### Typography
+- Base: 18–20px. Headings generous. Audience is 65+; accessibility IS the brief, not a bonus.
+- Layout: Single page, anchor-link nav, generous whitespace, tap targets ≥44px.
+- Tone: Professional but warm. Not corporate-sterile.
+
+### Brand / Header
+- Logo image: `public/images/stephanie-fisher-logo-v2.png` — displayed in the nav bar and as a white-card badge in the hero
+- Larger brand wordmark; taller top nav bar (h-48)
+- **Note:** Logo has a WHITE background, not transparent. On dark panels it sits inside a white rounded card (`bg-white rounded-2xl`). If a transparent PNG/SVG is ever provided, remove that wrapper.
+
+### Imagery
+- Hero portrait:  `public/images/stephanie-hero-v2.png` (green-top headshot — featured in hero)
+- About portrait: `public/images/stephanie-about-v2.png` (black blazer headshot — About section)
+- **Removed:** all landscape photography and previous photo versions
+
+## Page Structure (single page, anchor-link nav)
+
+1. **Hero** — Slate panel background. Logo badge + Stephanie's photo + her name as the heading. Primary CTAs: phone link + "Get in touch" scroll.
+2. **About** — Bio + `stephanie-about-v2.png` headshot (black blazer). Light-gray or white background.
+3. **What I Do** — Three service cards on slate panel backgrounds with white text.
+4. **Contact** — Phone, email, business hours, service area, simple contact form (mailto for v1).
+5. **Footer** — Compliance disclaimer, "not affiliated with Medicare" line, copyright.
 
 ## Tech stack
 
@@ -54,9 +78,9 @@ Also include in the footer: "Not affiliated with or endorsed by Medicare or any 
 
 ## Asset notes
 
-- Headshot: will live at `public/images/stephanie.jpg` (TBD — use a placeholder gray box for now).
-- Hero imagery: source from Unsplash, search "Spokane River", "Mt Spokane", "Pacific Northwest mountains". Save to `public/images/hero.jpg`.
-- Favicon: generate from initials "SF" in navy.
+- Hero portrait: `public/images/stephanie-hero-v2.png` (green-top headshot)
+- About portrait: `public/images/stephanie-about-v2.png` (black blazer headshot)
+- Logo (nav + hero): `public/images/stephanie-fisher-logo-v2.png` (white background — wrap in white card on dark panels)
 
 ## Out of scope (v1)
 
